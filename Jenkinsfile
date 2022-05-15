@@ -1,13 +1,12 @@
 pipeline   {
 
-agent any 
-/* agent {label 'slavecli1'} */
+agent {label 'slavecli1'} 
 
 stages 	{
 	stage('SCM')  {
 		steps   	{
 			echo "git pull my code step 1"
-			/ * git 'https://github.com/vimallinuxworld13/simple-java-maven-app.git' */
+			git 'https://github.com/vimallinuxworld13/simple-java-maven-app.git' 
 			}
    		}
 	stage('Build')  {
