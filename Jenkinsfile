@@ -16,7 +16,7 @@ stages 	{
    		}
 	stage('Deploy')   {
 		steps  		{
-			echo "java -jar target/*.jar"
+			sh 'java -jar target/*.jar'
 			}
    		}
 	stage('Deploy to production')   {
